@@ -56,6 +56,7 @@ interface Car3 {
   make: string;
   model: string;
   year: number;
+  price?: number;
   [key: string]: any;
 }
 
@@ -63,5 +64,6 @@ const camaro3: Car3 = {
   make: "쉐보레",
   model: "카마로",
   year: 2012,
+  price: 23230,
   color: "범블비 옐로우",
 };
