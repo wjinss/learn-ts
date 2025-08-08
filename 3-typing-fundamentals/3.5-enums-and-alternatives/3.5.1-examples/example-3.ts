@@ -3,6 +3,6 @@ enum Color {
   Red = 1,
   // Red에만 명시적으로 1을 할당하면, 이후 멤버들은 자동으로 1씩 증가한 값을 갖게 됩니다.
   // 따라서 Green은 2, Blue는 3이 됩니다.
-  Green,
-  Blue,
+  Green, //2 - 명시된 값에서 +1
+  Blue, //3
 }

@@ -1,8 +1,8 @@
 // 첫 번째 멤버는 명시적으로 할당하지 않으면 0이 할당됩니다.
 enum Color {
-  Red,
-  Green,
-  Blue,
+  Red, //0
+  Green, //1
+  Blue, //2
 }
 
 // 컴파일 결과
