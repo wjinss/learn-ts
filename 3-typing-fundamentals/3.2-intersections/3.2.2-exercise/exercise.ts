@@ -7,11 +7,22 @@
 // 그리고 `Staff` 타입의 변수 `staff`를 만들고 적절한 값을 할당하세요.
 
 interface Person {
-  name: string
-  age: number
+  name: string;
+  age: number;
 }
 
 interface Employee {
-  employeeId: number
-  department: string
+  employeeId: number;
+  department: string;
 }
+
+type Staff = Person & Employee;
+
+let staff: Staff = {
+  name: "우진",
+  age: 29,
+  employeeId: 2135,
+  department: "개발",
+};
+
+console.log(staff);
