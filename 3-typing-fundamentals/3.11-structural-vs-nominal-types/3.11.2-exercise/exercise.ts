@@ -7,19 +7,22 @@
 // Employee가 person과 호환되는 구조를 가지고 있기 때문에 문제없이 작동합니다.
 
 interface Person {
-  name: string
-  age: number
+  name: string;
+  age: number;
 }
 
 interface Employee {
-  name: string
-  age: number
-  employeeId: number
+  name: string;
+  // age: number;
+  employeeId: number;
 }
 
 function logPersonName(person: Person): void {
-  return console.log(person.name)
+  return console.log(person.name);
 }
+
+const newEmployee: Employee = { name: "우진", employeeId: 123 };
 
 // 질문 2
 // Employee에서 age 속성을 주석 처리하면 어떻게 될까요?
+// 컴파일 오류가 발생한다. Person 인터페이스에 age가 있기 때문
